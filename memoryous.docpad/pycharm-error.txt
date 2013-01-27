@@ -1,0 +1,312 @@
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 9: reading configurations from ~/.fonts.conf is deprecated.
+org.picocontainer.defaults.DuplicateComponentKeyRegistrationException: Key com.jetbrains.browserConnection.BrowserConnection duplicated
+	at com.intellij.util.pico.DefaultPicoContainer.registerComponent(DefaultPicoContainer.java:136)
+	at org.picocontainer.alternatives.AbstractDelegatingMutablePicoContainer.registerComponent(AbstractDelegatingMutablePicoContainer.java:63)
+	at com.intellij.openapi.components.impl.ServiceManagerImpl$1.extensionAdded(ServiceManagerImpl.java:72)
+	at com.intellij.openapi.components.impl.ServiceManagerImpl$1.extensionAdded(ServiceManagerImpl.java:62)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.addExtensionPointListener(ExtensionPointImpl.java:320)
+	at com.intellij.openapi.components.impl.ServiceManagerImpl.installEP(ServiceManagerImpl.java:79)
+	at com.intellij.openapi.components.impl.ServiceManagerImpl.<init>(ServiceManagerImpl.java:45)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.picocontainer.defaults.InstantiatingComponentAdapter.newInstance(InstantiatingComponentAdapter.java:193)
+	at org.picocontainer.defaults.ConstructorInjectionComponentAdapter$1.run(ConstructorInjectionComponentAdapter.java:220)
+	at org.picocontainer.defaults.ThreadLocalCyclicDependencyGuard.observe(ThreadLocalCyclicDependencyGuard.java:53)
+	at org.picocontainer.defaults.ConstructorInjectionComponentAdapter.getComponentInstance(ConstructorInjectionComponentAdapter.java:248)
+	at org.picocontainer.defaults.DecoratingComponentAdapter.getComponentInstance(DecoratingComponentAdapter.java:60)
+	at org.picocontainer.defaults.CachingComponentAdapter.getComponentInstance(CachingComponentAdapter.java:58)
+	at com.intellij.openapi.components.impl.ComponentManagerImpl$ComponentConfigComponentAdapter$1.getComponentInstance(ComponentManagerImpl.java:577)
+	at com.intellij.openapi.components.impl.ComponentManagerImpl$ComponentConfigComponentAdapter.getComponentInstance(ComponentManagerImpl.java:629)
+	at com.intellij.util.pico.DefaultPicoContainer.getLocalInstance(DefaultPicoContainer.java:242)
+	at com.intellij.util.pico.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:229)
+	at com.intellij.util.pico.DefaultPicoContainer.getComponentInstance(DefaultPicoContainer.java:211)
+	at org.picocontainer.alternatives.AbstractDelegatingMutablePicoContainer.getComponentInstance(AbstractDelegatingMutablePicoContainer.java:75)
+	at com.intellij.openapi.components.impl.ComponentManagerImpl.createComponent(ComponentManagerImpl.java:127)
+	at com.intellij.openapi.application.impl.ApplicationImpl.createComponent(ApplicationImpl.java:415)
+	at com.intellij.openapi.components.impl.ComponentManagerImpl.a(ComponentManagerImpl.java:108)
+	at com.intellij.openapi.components.impl.ComponentManagerImpl.initComponents(ComponentManagerImpl.java:347)
+	at com.intellij.openapi.components.impl.stores.ApplicationStoreImpl.load(ApplicationStoreImpl.java:83)
+	at com.intellij.openapi.application.impl.ApplicationImpl.load(ApplicationImpl.java:546)
+	at com.intellij.idea.IdeaApplication.run(IdeaApplication.java:207)
+	at com.intellij.idea.MainImpl$3.run(MainImpl.java:167)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:721)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:682)
+	at java.awt.EventQueue$3.run(EventQueue.java:680)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:691)
+	at com.intellij.ide.IdeEventQueue.e(IdeEventQueue.java:718)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:543)
+	at com.intellij.ide.IdeEventQueue.b(IdeEventQueue.java:421)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:379)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+[   4904]   WARN - romeExternalExtensionRegistrar - cannot create parent directories: /usr/share/google-chrome 
+[   4933]   WARN - romeExternalExtensionRegistrar - Cannot create parent directories: /opt/google/chrome/extensions 
+[   4933]   WARN - romeExternalExtensionRegistrar - Cannot create parent directories: /opt/google/chrome/extensions 
+[   5065]   WARN - romeExternalExtensionRegistrar - cannot create parent directories: /usr/share/google-chrome 
+[   5065]   WARN - romeExternalExtensionRegistrar - Cannot create parent directories: /opt/google/chrome/extensions 
+[   5065]   WARN - romeExternalExtensionRegistrar - Cannot create parent directories: /opt/google/chrome/extensions 
+[   7428]   WARN - eConnector.ChromeExtensionUtil - jb.crx not found, if you run idea under idea and want to use JavaScript Debugger or LiveEdit, you need to execute build/scripts/buildChromeExtension.gant (if you want to develop, you should disable JB extension and load unpacked extension) 
+[  11532]  ERROR - tartup.impl.StartupManagerImpl - com.jetbrains.browserConnection.BrowserConnection cannot be cast to com.jetbrains.browserConnection.BrowserConnection 
+java.lang.ClassCastException: com.jetbrains.browserConnection.BrowserConnection cannot be cast to com.jetbrains.browserConnection.BrowserConnection
+	at com.jetbrains.browserConnection.BrowserConnection.getInstance(BrowserConnection.java:75)
+	at com.jetbrains.liveEdit.LiveEditManager$MyPsiTreeChangeListener.<init>(LiveEditManager.java:221)
+	at com.jetbrains.liveEdit.LiveEditManager.processProject(LiveEditManager.java:69)
+	at com.jetbrains.liveEdit.SwitchControlledProjectService.runActivity(SwitchControlledProjectService.java:16)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$2.run(StartupManagerImpl.java:134)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.a(StartupManagerImpl.java:203)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivitiesFromExtensions(StartupManagerImpl.java:145)
+	at com.intellij.openapi.project.impl.ProjectManagerImpl$5.run(ProjectManagerImpl.java:434)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl$5.run(ProgressManagerImpl.java:279)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl$TaskRunnable.run(ProgressManagerImpl.java:472)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl$6.run(ProgressManagerImpl.java:291)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl$2.run(ProgressManagerImpl.java:181)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:221)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.runProcess(ProgressManagerImpl.java:172)
+	at com.intellij.openapi.application.impl.ApplicationImpl$8$1.run(ApplicationImpl.java:684)
+	at com.intellij.openapi.application.impl.ApplicationImpl$6.run(ApplicationImpl.java:457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1$1.run(ApplicationImpl.java:148)
+[  11535]  ERROR - tartup.impl.StartupManagerImpl - PyCharm 2.6.3  Build #PY-121.378 
+[  11535]  ERROR - tartup.impl.StartupManagerImpl - JDK: 1.7.0_10 
+[  11535]  ERROR - tartup.impl.StartupManagerImpl - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  11535]  ERROR - tartup.impl.StartupManagerImpl - Vendor: Oracle Corporation 
+[  11536]  ERROR - tartup.impl.StartupManagerImpl - OS: Linux 
+[  11536]  ERROR - tartup.impl.StartupManagerImpl - Last Action:  
+[  11537]  ERROR - tartup.impl.StartupManagerImpl - Current Command: EditorChange 
+[  12179]   WARN - openapi.wm.impl.ToolWindowImpl - ToolWindow icons should be 13x13. Please fix icon path=/icons/Lua.png class=class com.sylvanaar.idea.Lua.kahlua.KahLuaInterpreterWindowFactory 
+[  51290]  ERROR - plication.impl.ApplicationImpl - PermGen space 
+java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:791)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:634)
+	at com.intellij.util.lang.UrlClassLoader._defineClass(UrlClassLoader.java:125)
+	at com.intellij.util.lang.UrlClassLoader.defineClass(UrlClassLoader.java:121)
+	at com.intellij.util.lang.UrlClassLoader.findClass(UrlClassLoader.java:77)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at com.intellij.util.lang.UrlClassLoader.loadClass(UrlClassLoader.java:86)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.a(ActionManagerImpl.java:248)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.a(ActionManagerImpl.java:226)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.getAction(ActionManagerImpl.java:219)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.unstub(DefaultActionGroup.java:261)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.getChildren(DefaultActionGroup.java:240)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl$5.compute(ActionManagerImpl.java:1154)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl$5.compute(ActionManagerImpl.java:1148)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ApplicationImpl.java:947)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.a(ActionManagerImpl.java:1148)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.a(ActionManagerImpl.java:1162)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.preloadActionGroup(ActionManagerImpl.java:1142)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.d(ActionManagerImpl.java:1134)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.access$200(ActionManagerImpl.java:72)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl$4.run(ActionManagerImpl.java:1117)
+	at com.intellij.openapi.application.impl.ApplicationImpl$6.run(ApplicationImpl.java:457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+[  51947]  ERROR - plication.impl.ApplicationImpl - PyCharm 2.6.3  Build #PY-121.378 
+[  51947]  ERROR - plication.impl.ApplicationImpl - JDK: 1.7.0_10 
+[  51947]  ERROR - plication.impl.ApplicationImpl - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  51947]  ERROR - plication.impl.ApplicationImpl - Vendor: Oracle Corporation 
+[  51947]  ERROR - plication.impl.ApplicationImpl - OS: Linux 
+[  51947]  ERROR - plication.impl.ApplicationImpl - Last Action:  
+[  51948]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@125ffbcb,notifier=null,catchExceptions=false,when=1358128990716] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:791)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:634)
+	at com.intellij.util.lang.UrlClassLoader._defineClass(UrlClassLoader.java:125)
+	at com.intellij.util.lang.UrlClassLoader.defineClass(UrlClassLoader.java:121)
+	at com.intellij.util.lang.UrlClassLoader.findClass(UrlClassLoader.java:77)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at com.intellij.util.lang.UrlClassLoader.loadClass(UrlClassLoader.java:86)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at com.intellij.diagnostic.DialogAppender.appendToLoggers(DialogAppender.java:81)
+	at com.intellij.diagnostic.DialogAppender$1.run(DialogAppender.java:54)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:721)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:682)
+	at java.awt.EventQueue$3.run(EventQueue.java:680)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:691)
+	at com.intellij.ide.IdeEventQueue.e(IdeEventQueue.java:718)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:543)
+	at com.intellij.ide.IdeEventQueue.b(IdeEventQueue.java:421)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:379)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+[  51949]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+[  51949]  ERROR - com.intellij.ide.IdeEventQueue - JDK: 1.7.0_10 
+[  51949]  ERROR - com.intellij.ide.IdeEventQueue - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  51949]  ERROR - com.intellij.ide.IdeEventQueue - Vendor: Oracle Corporation 
+[  51949]  ERROR - com.intellij.ide.IdeEventQueue - OS: Linux 
+[  51949]  ERROR - com.intellij.ide.IdeEventQueue - Last Action:  
+[  52765]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@4578788b,notifier=null,catchExceptions=false,when=1358128991374] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:791)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:634)
+	at com.intellij.util.lang.UrlClassLoader._defineClass(UrlClassLoader.java:125)
+	at com.intellij.util.lang.UrlClassLoader.defineClass(UrlClassLoader.java:121)
+	at com.intellij.util.lang.UrlClassLoader.findClass(UrlClassLoader.java:77)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at com.intellij.util.lang.UrlClassLoader.loadClass(UrlClassLoader.java:86)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at com.intellij.diagnostic.DialogAppender.appendToLoggers(DialogAppender.java:81)
+	at com.intellij.diagnostic.DialogAppender$1.run(DialogAppender.java:54)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:721)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:682)
+	at java.awt.EventQueue$3.run(EventQueue.java:680)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:691)
+	at com.intellij.ide.IdeEventQueue.e(IdeEventQueue.java:718)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:543)
+	at com.intellij.ide.IdeEventQueue.b(IdeEventQueue.java:421)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:379)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+[  52766]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+[  52766]  ERROR - com.intellij.ide.IdeEventQueue - JDK: 1.7.0_10 
+[  52767]  ERROR - com.intellij.ide.IdeEventQueue - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  52767]  ERROR - com.intellij.ide.IdeEventQueue - Vendor: Oracle Corporation 
+[  52767]  ERROR - com.intellij.ide.IdeEventQueue - OS: Linux 
+[  52767]  ERROR - com.intellij.ide.IdeEventQueue - Last Action:  
+[  53622]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@8d0af02,notifier=null,catchExceptions=false,when=1358128992192] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:791)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:634)
+	at com.intellij.util.lang.UrlClassLoader._defineClass(UrlClassLoader.java:125)
+	at com.intellij.util.lang.UrlClassLoader.defineClass(UrlClassLoader.java:121)
+	at com.intellij.util.lang.UrlClassLoader.findClass(UrlClassLoader.java:77)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at com.intellij.util.lang.UrlClassLoader.loadClass(UrlClassLoader.java:86)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at com.intellij.diagnostic.DialogAppender.appendToLoggers(DialogAppender.java:81)
+	at com.intellij.diagnostic.DialogAppender$1.run(DialogAppender.java:54)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:721)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:682)
+	at java.awt.EventQueue$3.run(EventQueue.java:680)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:691)
+	at com.intellij.ide.IdeEventQueue.e(IdeEventQueue.java:718)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:543)
+	at com.intellij.ide.IdeEventQueue.b(IdeEventQueue.java:421)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:379)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+[  53623]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+[  53623]  ERROR - com.intellij.ide.IdeEventQueue - JDK: 1.7.0_10 
+[  53623]  ERROR - com.intellij.ide.IdeEventQueue - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  53623]  ERROR - com.intellij.ide.IdeEventQueue - Vendor: Oracle Corporation 
+[  53623]  ERROR - com.intellij.ide.IdeEventQueue - OS: Linux 
+[  53623]  ERROR - com.intellij.ide.IdeEventQueue - Last Action:  
+[  54401]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@28fbf580,notifier=null,catchExceptions=false,when=1358128993048] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+[  54401]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+[  54402]  ERROR - com.intellij.ide.IdeEventQueue - JDK: 1.7.0_10 
+[  54402]  ERROR - com.intellij.ide.IdeEventQueue - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  54402]  ERROR - com.intellij.ide.IdeEventQueue - Vendor: Oracle Corporation 
+[  54402]  ERROR - com.intellij.ide.IdeEventQueue - OS: Linux 
+[  54402]  ERROR - com.intellij.ide.IdeEventQueue - Last Action:  
+[  54995]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@a0f4e38,notifier=null,catchExceptions=false,when=1358128993827] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+[  54996]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+[  54996]  ERROR - com.intellij.ide.IdeEventQueue - JDK: 1.7.0_10 
+[  54996]  ERROR - com.intellij.ide.IdeEventQueue - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  54996]  ERROR - com.intellij.ide.IdeEventQueue - Vendor: Oracle Corporation 
+[  54996]  ERROR - com.intellij.ide.IdeEventQueue - OS: Linux 
+[  54996]  ERROR - com.intellij.ide.IdeEventQueue - Last Action:  
+[  55386]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@2b7fc557,notifier=null,catchExceptions=false,when=1358128994421] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+[  55386]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+[  55386]  ERROR - com.intellij.ide.IdeEventQueue - JDK: 1.7.0_10 
+[  55386]  ERROR - com.intellij.ide.IdeEventQueue - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  55386]  ERROR - com.intellij.ide.IdeEventQueue - Vendor: Oracle Corporation 
+[  55386]  ERROR - com.intellij.ide.IdeEventQueue - OS: Linux 
+[  55387]  ERROR - com.intellij.ide.IdeEventQueue - Last Action:  
+[  55840]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@6b1b6f12,notifier=null,catchExceptions=false,when=1358128994812] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+[  55840]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+[  55840]  ERROR - com.intellij.ide.IdeEventQueue - JDK: 1.7.0_10 
+[  55841]  ERROR - com.intellij.ide.IdeEventQueue - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  55841]  ERROR - com.intellij.ide.IdeEventQueue - Vendor: Oracle Corporation 
+[  55841]  ERROR - com.intellij.ide.IdeEventQueue - OS: Linux 
+[  55841]  ERROR - com.intellij.ide.IdeEventQueue - Last Action:  
+[  59118]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@41a66a3a,notifier=null,catchExceptions=false,when=1358128995266] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+[  59118]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+[  59118]  ERROR - com.intellij.ide.IdeEventQueue - JDK: 1.7.0_10 
+[  59118]  ERROR - com.intellij.ide.IdeEventQueue - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  59118]  ERROR - com.intellij.ide.IdeEventQueue - Vendor: Oracle Corporation 
+[  59118]  ERROR - com.intellij.ide.IdeEventQueue - OS: Linux 
+[  59119]  ERROR - com.intellij.ide.IdeEventQueue - Last Action:  
+[  59752]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@258ad25f,notifier=null,catchExceptions=false,when=1358128998544] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+[  59752]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+[  59752]  ERROR - com.intellij.ide.IdeEventQueue - JDK: 1.7.0_10 
+[  59753]  ERROR - com.intellij.ide.IdeEventQueue - VM: Java HotSpot(TM) 64-Bit Server VM 
+ERROR: PermGen space
+java.lang.OutOfMemoryError: PermGen space
+[  61050]  ERROR - com.intellij.ide.IdeEventQueue - Vendor: Oracle Corporation 
+[  61050]  ERROR - com.intellij.ide.IdeEventQueue - OS: Linux 
+[  61050]  ERROR - com.intellij.ide.IdeEventQueue - Last Action:  
+[  62848]  ERROR -       #com.intellij.util.Timed - PermGen space 
+java.lang.OutOfMemoryError: PermGen space
+[  63230]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@34e72923,notifier=null,catchExceptions=false,when=1358128999178] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+[  64408]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+[  64408]  ERROR - com.intellij.ide.IdeEventQueue - JDK: 1.7.0_10 
+[  64408]  ERROR - com.intellij.ide.IdeEventQueue - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  64409]  ERROR - com.intellij.ide.IdeEventQueue - Vendor: Oracle Corporation 
+[  64409]  ERROR - com.intellij.ide.IdeEventQueue - OS: Linux 
+[  64409]  ERROR - com.intellij.ide.IdeEventQueue - Last Action:  
+[  64408]  ERROR -       #com.intellij.util.Timed - PyCharm 2.6.3  Build #PY-121.378 
+[  64410]  ERROR -       #com.intellij.util.Timed - JDK: 1.7.0_10 
+[  64921]  ERROR -       #com.intellij.util.Timed - VM: Java HotSpot(TM) 64-Bit Server VM 
+[  64921]  ERROR -       #com.intellij.util.Timed - Vendor: Oracle Corporation 
+[  64921]  ERROR -       #com.intellij.util.Timed - OS: Linux 
+[  64921]  ERROR -       #com.intellij.util.Timed - Last Action:  
+[  67233]  ERROR - com.intellij.ide.IdeEventQueue - Error during dispatching of java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.diagnostic.DialogAppender$1@dd48874,notifier=null,catchExceptions=false,when=1358129002656] on sun.awt.X11.XToolkit@527c6c33 
+java.lang.OutOfMemoryError: PermGen space
+[  67234]  ERROR - com.intellij.ide.IdeEventQueue - PyCharm 2.6.3  Build #PY-121.378 
+Killed
